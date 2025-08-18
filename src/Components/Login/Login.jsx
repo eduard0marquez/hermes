@@ -8,12 +8,12 @@ function Login() {
       <form>
         <Image
           className="mb-4 log"
-          src="../../../public/logo1.png"
+          src="https://res.cloudinary.com/dppgbrtfk/image/upload/v1755556324/hermes_logo1_aiglcl.png"
           alt=""
           width="72"
           height="57"
         />
-        
+
         <div className="form-floating">
           <input
             type="text"
