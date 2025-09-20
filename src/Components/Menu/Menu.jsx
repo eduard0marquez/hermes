@@ -18,7 +18,7 @@ function Menu() {
   };
   return (
     <div>
-      <NavLink to="/Login">Login</NavLink>
+      
       <NavLink onClick={Logout}>Cerrar Sesion</NavLink>
     </div>
   );
