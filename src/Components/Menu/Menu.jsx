@@ -1,10 +1,25 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 function Menu() {
+  const navigate = useNavigate();
+  const Logout = () => {
+    localStorage.removeItem("user");
+    Swal.fire({
+      icon: "success",
+      title: `¡ ${`La sesión se cerro correctamente`}!`,
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+    });
+    navigate("/login", { replace: true });
+  };
   return (
     <div>
-      <NavLink to='/Login'>Login</NavLink>
+      <NavLink to="/Login">Login</NavLink>
+      <NavLink onClick={Logout}>Cerrar Sesion</NavLink>
     </div>
   );
 }
