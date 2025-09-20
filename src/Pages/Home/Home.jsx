@@ -1,7 +1,15 @@
 import React from "react";
+import { Hom, Login } from "../../Components";
+
+
 
 function Home() {
-  return <div>Home</div>;
+  return <div>
+  <Hom/>
+    
+
+    </div>
+  
 }
 
 export default Home;
