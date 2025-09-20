@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { Home } from "../Pages";
 import { Menu } from "../Components";
 
-function RouterApp() {
+function RoutApp() {
   return (
     <>
       <Menu />
@@ -14,4 +14,4 @@ function RouterApp() {
   );
 }
 
-export default RouterApp;
+export default RoutApp;

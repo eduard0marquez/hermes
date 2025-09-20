@@ -7,7 +7,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { Home } from "./Pages";
 import { Login, Menu } from "./Components";
 import RutasProtegidas from "./routes/RutasProtegidas";
-import RouterApp from "./routes/routerapp";
+import RoutApp from "./routes/RoutApp";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,7 +19,7 @@ function App() {
           path="/*"
           element={
             <RutasProtegidas>
-              <RouterApp />
+              <RoutApp />
             </RutasProtegidas>
           }
         />
