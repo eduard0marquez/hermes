@@ -6,8 +6,8 @@ import "./App.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { Home } from "./Pages";
 import { Login, Menu } from "./Components";
-import RouterApp from "./routes/routerapp";
 import RutasProtegidas from "./routes/RutasProtegidas";
+import RouterApp from "./routes/routerapp";
 
 function App() {
   const [count, setCount] = useState(0);
